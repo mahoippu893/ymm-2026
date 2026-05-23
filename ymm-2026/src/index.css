@@ -42,6 +42,10 @@
   @media (max-width: 1024px) {
     font-size: 16px;
   }
+
+  @media (max-width: 768px) {
+    font-size: 13px;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -168,14 +172,14 @@ code {
   grid-template-columns: repeat(var(--table-grid-cols, 2), minmax(0, 1fr));
   row-gap: 0;
   column-gap: 1.25rem;
-  padding: 2.5rem 1.5rem 3.5rem 7rem;
+  padding: 1.25rem 1.5rem 3.5rem 7rem;
   align-items: start;
   text-align: left;
 }
 
 @media (max-width: 768px) {
   .table-grid {
-    padding: 2rem 0.75rem 3rem 4.25rem;
+    padding: 0.85rem 0.75rem 3rem 4.25rem;
   }
 }
 
@@ -407,6 +411,50 @@ code {
   z-index: 0;
   min-height: 100svh;
   overflow-x: clip;
+}
+
+.page-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  padding: 0.65rem 1.5rem 0.4rem 7rem;
+  text-align: center;
+  border-bottom: 1px solid rgba(126, 217, 229, 0.45);
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 10px rgba(126, 217, 229, 0.1);
+}
+
+.page-header h1 {
+  margin: 0;
+  font-family: var(--heading);
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.45;
+  letter-spacing: 0.02em;
+  color: #000;
+}
+
+@media (max-width: 768px) {
+  .page-header {
+    padding: 0.5rem 0.75rem 0.35rem 4.25rem;
+  }
+
+  .page-header h1 {
+    font-size: 0.85rem;
+  }
+}
+
+.table-cell-item__message,
+.table-cell-item__name {
+  font-size: 13px;
+}
+
+@media (max-width: 768px) {
+  .table-cell-item__message,
+  .table-cell-item__name {
+    font-size: 11px;
+  }
 }
 
 .site-footer {

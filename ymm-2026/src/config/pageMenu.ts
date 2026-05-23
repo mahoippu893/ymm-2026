@@ -37,3 +37,7 @@ export const PAGE_MENU_ITEMS: PageMenuItem[] = [
     enabled: true,
   },
 ]
+
+export function getPageMenuItemByPath(path: string): PageMenuItem | undefined {
+  return PAGE_MENU_ITEMS.find((item) => item.path === path)
+}
