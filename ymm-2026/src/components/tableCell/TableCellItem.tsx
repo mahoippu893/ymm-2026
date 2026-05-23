@@ -106,12 +106,12 @@ export const TableCellItem = memo(function TableCellItem({
         className={`table-cell-item__content ${contentClassName}`}
       >
         <p
-          className={`table-cell-item__message whitespace-pre-line break-words text-center font-medium leading-[1.65] tracking-[0.01em] text-slate-700 ${messageClassName}`}
+          className={`table-cell-item__message whitespace-pre-line break-words text-center font-medium leading-[1.65] tracking-[0.01em] ${messageClassName}`}
         >
           {parseMessage(message, linkColor)}
         </p>
         {name && (
-          <p className="table-cell-item__name mt-2 text-center font-medium text-slate-600">
+          <p className="table-cell-item__name mt-2 text-center font-medium">
             {name}
             {nameSuffix}
           </p>

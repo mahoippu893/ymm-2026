@@ -21,6 +21,8 @@
   --accent-bg: rgba(126, 217, 229, 0.2);
   --accent-border: rgba(78, 184, 200, 0.55);
   --table-cell-item-width: 420px;
+  --table-cell-message-color: #334155;
+  --table-cell-name-color: #475569;
   --social-bg: rgba(244, 243, 236, 0.5);
   --shadow:
     rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
@@ -425,14 +427,14 @@ code {
   box-shadow: 0 2px 10px rgba(126, 217, 229, 0.1);
 }
 
-.page-header h1 {
+.page-header__title {
   margin: 0;
   font-family: var(--heading);
   font-size: 1.05rem;
   font-weight: 600;
   line-height: 1.45;
   letter-spacing: 0.02em;
-  color: #000;
+  color: var(--table-cell-message-color) !important;
 }
 
 @media (max-width: 768px) {
@@ -440,14 +442,19 @@ code {
     padding: 0.5rem 0.75rem 0.35rem 4.25rem;
   }
 
-  .page-header h1 {
+  .page-header__title {
     font-size: 0.85rem;
   }
 }
 
-.table-cell-item__message,
+.table-cell-item__message {
+  font-size: 13px;
+  color: var(--table-cell-message-color) !important;
+}
+
 .table-cell-item__name {
   font-size: 13px;
+  color: var(--table-cell-name-color) !important;
 }
 
 @media (max-width: 768px) {

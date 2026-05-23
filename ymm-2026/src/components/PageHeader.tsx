@@ -9,7 +9,9 @@ export default function PageHeader() {
 
   return (
     <header className="page-header">
-      <h1 className="page-header__title">{item.label}</h1>
+      <p className="page-header__title" role="heading" aria-level={1}>
+        {item.label}
+      </p>
     </header>
   )
 }
