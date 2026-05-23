@@ -12,7 +12,7 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         <Route element={<AppLayout />}>
-          <Route path="/" element={<Navigate to="/page/4" replace />} />
+          <Route path="/" element={<Navigate to="/page/1" replace />} />
           <Route path="/page/1" element={<Page1 />} />
           <Route path="/page/2" element={<Page2 />} />
           <Route path="/page/3" element={<Page3 />} />
